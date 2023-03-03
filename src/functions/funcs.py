@@ -3,7 +3,7 @@ import webbrowser
 import markdown as md
 import colorama as col
 import os
-from .md_to_html_parse import mdToHtml
+from .md_to_html_parse import mdToHtml,parse
 from .template import TAGSH,CONFIG_BOILER,CONFIG_FILE_NAME,BKAR_BOILER
 
 
@@ -44,8 +44,9 @@ def mdStyleSplitter(file)->list[str,str]:
 
 def compile(path:str,outdir:str,h:bool)->None:
     input_file = open(path,'r')
-    md_list,style_list = mdStyleSplitter(input_file)
-    output = mdToHtml(md_list)
+    # md_list,style_list = mdStyleSplitter(input_file)
+    # output = mdToHtml(md_list)
+    output = parse(input_file)
     output_file = open(outdir,'w+')
     output_file.write(output)
     input_file.close()

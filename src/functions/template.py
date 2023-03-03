@@ -1,11 +1,12 @@
 
 
 TAGSH = {
-    1 : "<h1> $tag$ </h1>",
-    2 : "<h2> $tag$ </h2>",
-    3 : "<h3> $tag$ </h3>",
-    4 : "<h4> $tag$ </h4>",
-    5 : "<h5> $tag$ </h5>",
+    1 : '<h1 class="$class$"> $tag$ </h1>',
+    2 : '<h2 class="$class$"> $tag$ </h2>',
+    3 : '<h3 class="$class$"> $tag$ </h3>',
+    4 : '<h4 class="$class$"> $tag$ </h4>',
+    5 : '<h5 class="$class$"> $tag$ </h5>',
+    0 : '<p class="$class$"> $tag$ </p>'
 }
 
 CONFIG_BOILER = {
@@ -31,7 +32,7 @@ BKAR_BOILER = """
 """
 
 DEFAULT_STYLE = """
-<style>
+
     *{
         box-sizing: border-box;
         padding: 0;
@@ -39,12 +40,5 @@ DEFAULT_STYLE = """
     html{
         font-family: sans-serif;
     }
-    button{
-        border: none;
-        padding: 5px 10px;
-        border-radius: 2px;
-        background-color: dodgerblue;
-        color: aliceblue;
-    }
-</style>
+
 """
