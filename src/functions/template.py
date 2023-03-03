@@ -29,3 +29,22 @@ BKAR_BOILER = """
 </body>
 </html>
 """
+
+DEFAULT_STYLE = """
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+    }
+    html{
+        font-family: sans-serif;
+    }
+    button{
+        border: none;
+        padding: 5px 10px;
+        border-radius: 2px;
+        background-color: dodgerblue;
+        color: aliceblue;
+    }
+</style>
+"""
