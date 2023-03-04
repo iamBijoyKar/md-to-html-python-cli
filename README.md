@@ -14,6 +14,8 @@ This is a paragraph $[color:#777777]$
 ```
 Output :
 
+![image](https://user-images.githubusercontent.com/85790967/222885213-e129e8fe-da18-4263-b7c7-b8a9131242bc.png)
+
 ```html
 <h1>This is a h1 </h1>
 <h2>This is a h2 </h2>
