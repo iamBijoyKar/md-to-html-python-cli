@@ -1,3 +1,4 @@
 .vscode/
 env/
 temp/
+src/__pycache__/
