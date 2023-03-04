@@ -1,9 +1,7 @@
 name: Testing
 on: 
   push:
-    branches: [ dev, master ]
   pull_request:
-    branches: [ dev, master ]
 
 jobs: 
   build-test:
@@ -17,4 +15,4 @@ jobs:
     - name: Dependencies Installation
     - run: pip install -r requirements.txt
     - name: Running Tests
-    - run: python test/main_test.py
+    - run: python src/main_test.py
