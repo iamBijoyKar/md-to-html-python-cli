@@ -1,10 +1,12 @@
 # Contributing Guidelines 
 
-### To contribute you need to setup a virtual environment !!!
+### 🔔 To contribute you need to setup a virtual environment !!!
+
+### 🔔  `dev` branch is our primary development branch, all works will be done on `dev` branch
 ### Prerequisites
 - Python must be installed in your system
 - Basic knowledge of python modeles
-## Get Started
+## Get Started 🏃💨
 
 1. Fisrt install the `virtualenv` python module
 ```bash
@@ -31,10 +33,23 @@ source env/bin/activate
 This is for linux.
 4. Now install all the required modules
 ```bash
-pip install -r requirements.txt
+pip install -r src/requirements.txt
 ```
 This command will install all the modules mentioned in the requirements.txt.
 
 5. Now make changes and contribute as much as possible.
+
+## Best Practices 🥇 ✅
+
+1. Do not start making changes on the dev branch after pulling it in you local system. Make a seperate bracnh from `dev` branch and give a proper name to the branch. Then push the branch to your `origin` then make a pull request from your created branch to our `dev` branch.
+2. Variable names must be in `snake case`.
+3. Function name must be in `camel case`.
+4. Class name must be in `pascal case`.
+
+## Local Testing 👩‍🔬🧪
+There is a `test` dir in the `src` dir. To test the code in your local machine 
+```bash
+python src/main_test.py
+```
 
 ### Warning !! This is an unfinished prototype project and it is in the start of the development stage so it is unreliable. 
