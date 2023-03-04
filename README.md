@@ -1,5 +1,7 @@
 # Markdown to Html Prototype
 
+[![Testing](https://github.com/iamBijoyKar/md-to-html-python-cli/actions/workflows/test.yml/badge.svg)](https://github.com/iamBijoyKar/md-to-html-python-cli/actions/workflows/test.yml)
+
 This project convert markdown with special syntax into html.
 
 ### Example :
